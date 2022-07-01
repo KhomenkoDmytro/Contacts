@@ -6,16 +6,19 @@
         "start": "cross-env NODE_ENV=production node ./server.js",
         "start:dev": "cross-env NODE_ENV=development nodemon ./server.js",
         "lint": "eslint **/*.js",
-        "lint:fix": "eslint --fix **/*.js",
-        "prepare": "husky install"
+        "lint:fix": "eslint --fix **/*.js"
     },
     "dependencies": {
+        "axios": "^0.27.2",
+        "bcryptjs": "^2.4.3",
         "cors": "2.8.5",
         "cross-env": "^7.0.3",
         "express": "4.17.1",
         "joi": "^17.6.0",
+        "jsonwebtoken": "^8.5.1",
         "mongoose": "^6.4.1",
         "morgan": "1.10.0",
+        "random-email": "^1.0.3",
         "uuid": "^8.3.2"
     },
     "devDependencies": {
