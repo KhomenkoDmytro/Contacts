@@ -1,8 +1,8 @@
 const { Contact } = require('../models/contact');
-const { default: axios } = require('axios');
+const { default: axios } = require('axios'); // бібліотека http-клієнт для node.js
 const randomEmail = require('random-email');
 const { v4: uuidv4 } = require('uuid');
-// Избавились от next в каждой функции, ибо юзаем его внутри мидлвары
+
 const getAllContacts = async (req, res) => {
   const { _id } = req.user;
   const { page = 1, limit = 10, favorite = false } = req.query;

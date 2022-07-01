@@ -1,15 +1,11 @@
 const express = require('express');
-const logger = require('morgan'); // логує в консоль статус-код запиту і маршрут по якому відбувся запит
 const cors = require('cors'); // пакет для створення мідлвер, що дозволяє кросдоменні запити
 
-const contactsRouter = require('./routes/api/contacts');
+const contactsRouter = require('./routes/api/contacts'); // створюємо роутери
 const authRouter = require('./routes/api/users');
 
 const app = express();
 
-const formatsLogger = app.get('env') === 'development' ? 'dev' : 'short'; // режим роботи логера
-
-app.use(logger(formatsLogger));
 app.use(cors());
 app.use(express.json());
 
