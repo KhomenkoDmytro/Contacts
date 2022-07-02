@@ -3,8 +3,7 @@
     "version": "0.0.0",
     "private": true,
     "scripts": {
-        "start": "cross-env NODE_ENV=production node ./server.js",
-        "start:dev": "cross-env NODE_ENV=development nodemon ./server.js",
+        "start": "cross-env NODE_ENV=development nodemon ./server.js",
         "lint": "eslint **/*.js",
         "lint:fix": "eslint --fix **/*.js"
     },
@@ -17,7 +16,6 @@
         "joi": "^17.6.0",
         "jsonwebtoken": "^8.5.1",
         "mongoose": "^6.4.1",
-        "morgan": "1.10.0",
         "random-email": "^1.0.3",
         "uuid": "^8.3.2"
     },
